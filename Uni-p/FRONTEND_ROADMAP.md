@@ -10,7 +10,7 @@
 - [ ] Forgot password form UI
 - [ ] Password reset form UI
 - [ ] Email verification UI (verification sent message)
-
+ 
 ### User Profile System (UI Only)
 - [ ] Profile creation/edit form
 - [ ] Profile photo upload UI (with preview)
