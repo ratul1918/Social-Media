@@ -21,7 +21,7 @@
 - ✅ Post creation modal
 - ✅ Image upload (max 5 images, preview, remove)
 - ✅ Image gallery viewer (lightbox)
-- ✅ Comments + nested comments
+- ✅ Comments + nested comments 
 - ✅ Likes, shares
 - ✅ Mentions (@) autocomplete
 - ✅ Hashtags (#) parsing and clickable tags
