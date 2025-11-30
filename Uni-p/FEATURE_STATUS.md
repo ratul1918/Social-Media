@@ -9,7 +9,7 @@
 - ✅ Password strength indicator
 - ✅ Forgot password form UI
 - ✅ Profile page with tabs (Posts, About, Friends, Photos)
-- ✅ Profile settings/edit page
+- ✅ Profile settings/edit page 
 - ✅ Profile photo upload UI (with preview)
 - ✅ Cover photo upload UI (with preview)
 - ✅ Bio/description editor
