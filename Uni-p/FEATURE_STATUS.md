@@ -31,7 +31,7 @@
 - ✅ Infinite scroll (structure ready)
 
 ### 3. Friends & Messaging UI
-- ✅ Friend requests + suggestions (Connections page)
+- ✅ Friend requests + suggestions (Connections page) 
 - ✅ Real-time chat interface
 - ✅ Message bubbles (sent/received)
 - ✅ Chat list
