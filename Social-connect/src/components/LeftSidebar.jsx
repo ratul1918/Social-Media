@@ -33,8 +33,8 @@ export default function LeftSidebar({ activeView, onViewChange }) {
             onClick={(e) => handleClick(e, item.view)}
             className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-300 ${
               activeView === item.view
-                ? "bg-white shadow-sm text-uiu-blue font-semibold border-l-4 border-uiu-crimson transform scale-[1.02]"
-                : "text-gray-600 hover:bg-white hover:shadow-sm hover:text-uiu-blue"
+                ? "bg-white shadow-sm text-blue-600 font-semibold border-l-4 border-blue-600 transform scale-[1.02]"
+                : "text-gray-600 hover:bg-white hover:shadow-sm hover:text-blue-600"
             }`}
           >
             <i className={`fas ${item.icon} text-lg w-6 transition-transform duration-300 ${activeView === item.view ? "scale-110" : ""}`}></i>
@@ -52,8 +52,8 @@ export default function LeftSidebar({ activeView, onViewChange }) {
               onClick={(e) => handleClick(e, item.view)}
               className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-300 ${
                 activeView === item.view
-                  ? "bg-white shadow-sm text-uiu-blue font-semibold border-l-4 border-uiu-crimson transform scale-[1.02]"
-                  : "text-gray-600 hover:bg-white hover:shadow-sm hover:text-uiu-blue"
+                  ? "bg-white shadow-sm text-blue-600 font-semibold border-l-4 border-blue-600 transform scale-[1.02]"
+                  : "text-gray-600 hover:bg-white hover:shadow-sm hover:text-blue-600"
               }`}
             >
               <i className={`fas ${item.icon} text-lg w-6 transition-transform duration-300 ${activeView === item.view ? "scale-110" : ""}`}></i>

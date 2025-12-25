@@ -1,11 +1,20 @@
-/* UIU Color Theme */
+/* unip Color Theme - Professional & Modern */
 :root {
-  --uiu-blue: #0f2b5b;
-  --uiu-lightBlue: #1e427f;
-  --uiu-crimson: #e04f00;
-  --uiu-crimsonHover: #bf360c;
-  --uiu-bg: #f0f2f5;
-  --uiu-glass: rgba(255, 255, 255, 0.85);
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-light: #3b82f6;
+  --accent: #7c3aed;
+  --success: #10b981;
+  --bg: #f8fafc;
+  --glass: rgba(255, 255, 255, 0.9);
+  
+  /* Kept for backward compatibility */
+  --uiu-blue: #2563eb;
+  --uiu-lightBlue: #3b82f6;
+  --uiu-crimson: #7c3aed;
+  --uiu-crimsonHover: #6d28d9;
+  --uiu-bg: #f8fafc;
+  --uiu-glass: rgba(255, 255, 255, 0.9);
 }
 
 * {

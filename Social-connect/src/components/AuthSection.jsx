@@ -147,13 +147,13 @@ export default function AuthSection({ onLogin, isLoading }) {
   return (
     <div
       id="auth-section"
-      className="fixed inset-0 z-40 flex items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-uiu-bg transition-opacity duration-500 min-h-screen overflow-y-auto py-8"
+      className="fixed inset-0 z-40 flex items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-slate-50 transition-opacity duration-500 min-h-screen overflow-y-auto py-8"
       style={{ opacity }}
     >
       {/* Animated Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-80 bg-gradient-to-br from-uiu-blue via-uiu-lightBlue to-uiu-blue rounded-b-[4rem] transform transition-transform duration-700"></div>
-      <div className="absolute top-0 right-0 w-96 h-96 bg-uiu-crimson/10 rounded-full blur-3xl animate-pulse-slow"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-uiu-blue/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute top-0 left-0 w-full h-80 bg-gradient-to-br from-blue-600 via-blue-500 to-blue-600 rounded-b-[4rem] transform transition-transform duration-700"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: "1s" }}></div>
 
       <div className="relative w-full max-w-md p-6 z-10">
         {/* Toggle Tabs */}
@@ -162,8 +162,8 @@ export default function AuthSection({ onLogin, isLoading }) {
             onClick={() => toggleAuthMode("login")}
             className={`flex-1 py-3 px-4 rounded-xl font-semibold text-sm transition-all-300 transform ${
               isLogin
-                ? "bg-uiu-blue text-white shadow-md scale-105"
-                : "text-gray-600 hover:text-uiu-blue hover:bg-white/50"
+                ? "bg-blue-600 text-white shadow-md scale-105"
+                : "text-gray-600 hover:text-blue-600 hover:bg-white/50"
             }`}
           >
             <i className="fas fa-sign-in-alt mr-2"></i>
@@ -173,8 +173,8 @@ export default function AuthSection({ onLogin, isLoading }) {
             onClick={() => toggleAuthMode("signup")}
             className={`flex-1 py-3 px-4 rounded-xl font-semibold text-sm transition-all-300 transform ${
               !isLogin
-                ? "bg-uiu-crimson text-white shadow-md scale-105"
-                : "text-gray-600 hover:text-uiu-crimson hover:bg-white/50"
+                ? "bg-purple-600 text-white shadow-md scale-105"
+                : "text-gray-600 hover:text-purple-600 hover:bg-white/50"
             }`}
           >
             <i className="fas fa-user-plus mr-2"></i>
@@ -189,16 +189,16 @@ export default function AuthSection({ onLogin, isLoading }) {
         >
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="inline-block p-3 bg-uiu-blue/10 rounded-2xl mb-4">
-              <i className={`fas ${isLogin ? "fa-graduation-cap" : "fa-user-graduate"} text-uiu-blue text-3xl`}></i>
+            <div className="inline-block p-3 bg-blue-100 rounded-2xl mb-4">
+              <i className={`fas ${isLogin ? "fa-graduation-cap" : "fa-user-graduate"} text-blue-600 text-3xl`}></i>
             </div>
-            <h2 className="text-3xl font-bold text-uiu-blue mb-2">
-              {isLogin ? "Welcome Back" : "Join UIU Social"}
+            <h2 className="text-3xl font-bold text-blue-600 mb-2">
+              {isLogin ? "Welcome Back" : "Join unip"}
             </h2>
             <p className="text-gray-500 text-sm">
               {isLogin
                 ? "Enter your credentials to access the network"
-                : "Create your account to connect with the UIU community"}
+                : "Create your account to connect with the unip community"}
             </p>
           </div>
 
@@ -207,10 +207,10 @@ export default function AuthSection({ onLogin, isLoading }) {
             <form onSubmit={handleLoginSubmit} className="space-y-1">
               <div className="mb-4">
                 <label className="block text-xs font-semibold text-gray-600 uppercase mb-2">
-                  Student ID / Email <span className="text-uiu-crimson ml-1">*</span>
+                  Student ID / Email <span className="text-purple-600 ml-1">*</span>
                 </label>
                 <div className="relative group">
-                  <i className={`fas fa-id-card absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 transition-colors duration-300 ${errors.id && touched.id ? "text-red-500" : "group-focus-within:text-uiu-crimson"}`}></i>
+                  <i className={`fas fa-id-card absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 transition-colors duration-300 ${errors.id && touched.id ? "text-red-500" : "group-focus-within:text-purple-600"}`}></i>
                   <input
                     type="text"
                     name="id"
@@ -247,7 +247,7 @@ export default function AuthSection({ onLogin, isLoading }) {
                     className={`w-full pl-10 pr-12 py-3 rounded-xl bg-gray-50 border-2 transition-all-300 text-sm ${
                       errors.password && touched.password
                         ? "border-red-300 focus:border-red-500 focus:bg-red-50"
-                        : "border-gray-200 focus:border-uiu-crimson focus:bg-white focus:shadow-md"
+                        : "border-gray-200 focus:border-purple-600 focus:bg-white focus:shadow-md"
                     }`}
                     required
                   />
@@ -271,14 +271,14 @@ export default function AuthSection({ onLogin, isLoading }) {
                     name="rememberMe"
                     checked={loginData.rememberMe}
                     onChange={handleLoginChange}
-                    className="mr-2 w-4 h-4 rounded border-gray-300 text-uiu-blue focus:ring-uiu-crimson cursor-pointer transition-all"
+                    className="mr-2 w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-purple-600 cursor-pointer transition-all"
                   />
-                  <span className="group-hover:text-uiu-blue transition-colors">Remember me</span>
+                  <span className="group-hover:text-blue-600 transition-colors">Remember me</span>
                 </label>
                 <button
                   type="button"
                   onClick={() => setShowForgotPassword(true)}
-                  className="text-sm text-uiu-crimson font-medium hover:underline transition-all"
+                  className="text-sm text-purple-600 font-medium hover:underline transition-all"
                 >
                   Forgot Password?
                 </button>
@@ -287,7 +287,7 @@ export default function AuthSection({ onLogin, isLoading }) {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full py-4 bg-gradient-to-r from-uiu-blue to-uiu-lightBlue hover:from-uiu-lightBlue hover:to-uiu-blue text-white rounded-xl font-semibold shadow-lg shadow-blue-900/30 transition-all transform hover:scale-[1.02] active:scale-95 flex justify-center items-center disabled:opacity-75 disabled:cursor-not-allowed group"
+                className="w-full py-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white rounded-xl font-semibold shadow-lg shadow-blue-900/30 transition-all transform hover:scale-[1.02] active:scale-95 flex justify-center items-center disabled:opacity-75 disabled:cursor-not-allowed group"
               >
                 {isLoading ? (
                   <div className="loader border-white border-t-transparent w-5 h-5"></div>

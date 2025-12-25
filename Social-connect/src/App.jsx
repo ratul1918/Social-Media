@@ -33,7 +33,7 @@ function App() {
     await new Promise((resolve) => setTimeout(resolve, 1500))
 
     // Show success toast
-    setToastMessage("Welcome to UIU Network!")
+    setToastMessage("Welcome to unip!")
     setShowToast(true)
 
     // Transition to Dashboard

@@ -12,6 +12,15 @@ module.exports = {
           bg: "#F0F2F5",
           glass: "rgba(255, 255, 255, 0.85)",
         },
+        unip: {
+          primary: "#2563eb",      // Professional blue
+          primaryDark: "#1e40af",  // Darker blue
+          primaryLight: "#3b82f6", // Lighter blue
+          accent: "#7c3aed",       // Purple accent
+          success: "#10b981",      // Green
+          bg: "#f8fafc",          // Light background
+          glass: "rgba(255, 255, 255, 0.9)",
+        },
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],

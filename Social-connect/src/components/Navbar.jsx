@@ -39,11 +39,11 @@ export default function Navbar({ onViewChange, activeView }) {
           }
         }}
       >
-        <div className="w-8 h-8 bg-uiu-blue rounded-lg flex items-center justify-center text-white">
-          <i className="fas fa-graduation-cap text-sm"></i>
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+          U
         </div>
-        <span className="font-bold text-xl text-uiu-blue tracking-tight hidden sm:block">
-          UIU<span className="text-uiu-crimson">Social</span>
+        <span className="font-bold text-xl text-blue-600 tracking-tight hidden sm:block">
+          unip
         </span>
       </div>
 
