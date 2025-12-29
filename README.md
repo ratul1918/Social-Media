@@ -3,7 +3,6 @@
 A professional, modern social network platform built with React, Vite, and Tailwind CSS. Connect, share, and build your network with an intuitive and elegant interface.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![React](https://img.shields.io/badge/react-19.2.0-61dafb.svg)
 
 ## 🌟 Features
