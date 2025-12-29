@@ -1,4 +1,4 @@
-# unip - Modern Social Network Platform
+# Modern Social Network Platform
 
 A professional, modern social network platform built with React, Vite, and Tailwind CSS. Connect, share, and build your network with an intuitive and elegant interface.
 
